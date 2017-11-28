@@ -1,0 +1,143 @@
+
+'''
+算数的运算符
+'''
+a=21
+b=10
+c=0
+#输出c=a+b 31
+c=a+b
+print("line1-value of c is",c)
+#输出c=a-b 11
+c=a-b
+print("line2-value of c is",c)
+#输出c=a*b 210
+c=a*b
+print("line3-value of c is",c)
+#输出c=a/b 2.1   返回结果为浮点型
+c=a/b
+print("line4-value of c is",c)
+#输出c=a%b 取模-返回除法的余数 1
+c=a%b
+print("line5-value of c is",c)
+#输出c=a**b 幂-a的b次方 8
+a=2
+b=3
+c=a**b
+print("line6-value of c is",c)
+#输出=a//b a/b商的整数部分 2
+a=10
+b=5
+c=a//b
+print("line7-value of c is",c)
+
+
+#判断a与b是否相等     结果：is not equal
+if (a==b):
+    print("line1-a is equal to b")
+else:
+    print("line1-a is not equal to b")
+#判断a与b是否不相等1  !=     结果：is not equal
+if (a!=b):
+    print("line2-a is not equal to b")
+else:
+    print("line2-a is equal to b")
+    '''
+    这段仅适用于python2,python3中没有<>语法
+#判断a与b是否不相等1  <>
+if ( a '<>' b ):
+   print "3 - a 不等于 b"
+else:
+   print "3 - a 等于 b"
+   '''
+
+#判断a是否<b
+if (a<b):
+    print("line4-a is less than b")
+else:
+    print("line4-a is not less than b")
+if (a>b):
+    print("line5-a is greater than b")
+else:
+    print("line5-a is not greater than b")
+
+a=5
+b=20
+if (a<=b):
+    print("line6-a is either less than b")
+else:
+    print("line6-a is neither less than b")
+if (a>=b):
+    print("line7-a is either greater than b")
+else:
+    print("line5-a is neither greater than b")
+
+'''
+python赋值运算符
+'''
+a=21
+b=10
+c=0
+#21+10=31
+c=a+b
+print("line-1 value of c is",c)
+#31+21=52
+c+=a
+print("line-2 value of c is",c)
+#52-21=31
+c-=a
+print("line-3 value of c is",c)
+#31*21=651
+c*=a
+print("line-4 value of c is",c)
+#651/21=31.0  /整除 其结果为浮点型
+c/=a
+print("line-5 value of c is",c)
+
+c=2
+#2/21=0 余2
+c%=a
+print("line-6 value of c is",c)
+#2**21=2097152
+c**=a
+print("line-7 value of c is",c)
+#2097152//21=99864
+c//=a
+print("line-8 value of c is",c)
+
+'''
+python位运算符,暂时不会  明天研究 弄懂后再写
+'''
+
+'''
+python逻辑运算符,明天再研究
+'''
+a = 10
+b = 20
+c=0
+if ( a and b ):
+   print ("line1-a and b are ture")
+else:
+   print ("line1-either a is not ture or b is not ture")
+ 
+if ( a or b ):
+   print ("line2-either a is ture or b is true or both are ture")
+else:
+   print ("line2-neither a is ture or b is true ")
+ 
+
+a = 0
+if ( a and b ):
+   print ("line3-a and b is true")
+else:
+   print ("line3-a and b is not true")
+ 
+if ( a or b ):
+   print ("line4-either a is ture or b is true or both are ture")
+else:
+   print ("ine4-neither a is ture or b is true")
+ 
+if not( a and b ):
+   print ("line5-a and b are ture")
+else:
+   print ("line5-either a is not ture or b is not true")
