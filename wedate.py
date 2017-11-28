@@ -8,6 +8,3 @@ phonelogin = driver.find_element_by_css_selector("#logintab > li:nth-child(2) > 
 phonelogin.click()
 text = driver.find_element_by_css_selector("#mobile")
 text.click()
-text.send_keys(
-    input type="text" id="number"
-)
