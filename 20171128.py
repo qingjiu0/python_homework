@@ -141,3 +141,73 @@ if not( a and b ):
    print ("line5-a and b are ture")
 else:
    print ("line5-either a is not ture or b is not true")
+
+'''
+python成员运算符
+'''
+a=0
+b=10
+list=[1,2,3,4,5]
+#判断a是否在list里面   不在
+if (a in list):
+    print("line1-a is available in the given list")
+else:
+    print("line1-a is not available in the given list")
+#判断a是否不在list里面   不在
+if (b not in list):
+    print("line2-b is not available in the given list")
+else:
+    print("line2-b is available in the given list")
+
+'''
+python身份运算符
+'''
+a=20
+b=20
+#判断a与b是否引用自同一个对象
+if (a is b):
+    print("line1-a and b have same identity")
+else:
+    print("line1-a and b do not have same identity")
+
+if (id(a)==id(b)):
+    print("line2.1-a and b have same identity")
+else:
+    print("line2.1-a and b do not have same identity")
+
+if (id(a) is id(b)):
+    print("line2.2-a and b have same identity")
+else:
+    print("line2.2-a and b do not have same identity")
+
+
+b=30
+if (a is b):
+    print("line3-a and b have same identity")
+else:
+    print("line3-a and b do not have same identity")
+
+if (a is not b):
+    print("line4-a and b do not have same identity")
+else:
+    print("line4-a and b have same identity")
+
+'''
+python运算符优先级
+'''
+a=20
+b=10
+c=15
+d=5
+e=0
+e=(a+b)*c/d   #(30*15)/5 =90.0
+print("value of (a+b)*c/d is",e)
+
+e=((a+b)*c)/d
+print("value of ((a+b)*c)/d is",e)
+
+e=(a+b)*(c/d)  #30*3.0=90.0 
+print("value of (a+b)*(c/d) is",e)
+
+e=a+(b*c)/d   #20+150/5=50.0
+print("value of a+(b*c)/d is",e)
