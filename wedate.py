@@ -22,14 +22,49 @@ phonelogin = driver.find_element_by_id('login')
 phonelogin.click()
 
 time.sleep(3) 
-#新建日程
-new = driver.find_element_by_class_name("addicon")
-new.click()
+#默认月视图点击+新建日程
+addicon = driver.find_element_by_class_name("addicon")
+addicon.click()
 schtitle = driver.find_element_by_id("schtitle")
 time.sleep(1) 
 schtitle.click()
 time.sleep(1) 
-schtitle.send_keys("单天时间段")
+schtitle.send_keys("月_单天时间")
+time.sleep(1) 
+btnSavesch = driver.find_element_by_id("btnSavesch")
+btnSavesch.click()
+time.sleep(2)
+
+#切换周视图
+button_周 = driver.find_element_by_css_selector("#mycalendar > div.fc-toolbar > div.fc-left > button.fc-agendaWeek-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right")
+button_周.click()
+time.sleep(2)
+#周视图点击+新建日程
+addicon = driver.find_element_by_class_name("addicon")
+addicon.click()
+schtitle = driver.find_element_by_id("schtitle")
+time.sleep(1) 
+schtitle.click()
+time.sleep(1) 
+schtitle.send_keys("周_单天时间")
+time.sleep(1) 
+btnSavesch = driver.find_element_by_id("btnSavesch")
+btnSavesch.click()
+time.sleep(2)
+
+
+#切换列表视图
+button_列表 = driver.find_element_by_css_selector("#mycalendar > div.fc-toolbar > div.fc-left > button.fc-listMonth-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right")
+button_列表.click()
+time.sleep(2)
+#列表视图点击+新建日程
+addicon = driver.find_element_by_class_name("addicon")
+addicon.click()
+schtitle = driver.find_element_by_id("schtitle")
+time.sleep(1) 
+schtitle.click()
+time.sleep(1) 
+schtitle.send_keys("列表_单天时间")
 time.sleep(1) 
 btnSavesch = driver.find_element_by_id("btnSavesch")
 btnSavesch.click()
@@ -49,5 +84,7 @@ todotitle.send_keys("新建待办00234")
 time.sleep(1)
 savetodo = driver.find_element_by_id("savetodo")
 savetodo.click()
-time.sleep(1)
+time.sleep(2)
+
+
 
