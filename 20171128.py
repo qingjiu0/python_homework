@@ -139,6 +139,7 @@ python逻辑运算符
 a = 10
 b = 20
 c=0
+#布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。
 if ( a and b ):
    print ("line1-a and b are ture")
 else:
